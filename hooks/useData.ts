@@ -1,6 +1,6 @@
 
 import { useContext } from 'react';
-import { DataContext } from '../contexts/DataContext';
+import { DataContext } from '../context/DataContext.tsx';
 
 export const useData = () => {
   const context = useContext(DataContext);
