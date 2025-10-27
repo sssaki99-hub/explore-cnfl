@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useData } from '../hooks/useData';
+import { useData } from '../hooks/useData.ts';
 
 const Footer: React.FC = () => {
   const { state } = useData();
