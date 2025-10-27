@@ -1,9 +1,9 @@
 
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../contexts/AuthContext';
-import { UserRole } from '../types';
-import { useData } from '../hooks/useData';
+import { AuthContext } from '../context/AuthContext.tsx';
+import { UserRole } from '../types.ts';
+import { useData } from '../hooks/useData.ts';
 
 const Header: React.FC = () => {
   const authContext = useContext(AuthContext);
