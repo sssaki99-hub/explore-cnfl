@@ -1,4 +1,4 @@
-import { UserRole } from '../types';
+import { UserRole } from '../types.ts';
 
 export const MOCK_DATA = {
   users: [
