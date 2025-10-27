@@ -2,7 +2,7 @@ import React, { createContext, useReducer, ReactNode } from 'react';
 import { 
     Event, CricketTeam, Player, ParticipantTeam, ReplacementRequest, 
     Announcement, ChatMessage, User, SiteSettings, CnflHistory
-} from '../types';
+} from '../types.ts';
 import { MOCK_DATA } from './mockData.ts';
 
 interface AppState {
