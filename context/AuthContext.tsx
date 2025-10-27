@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect, ReactNode, useContext } from 'react';
-import { User, UserRole } from '../types';
-import { DataContext } from './DataContext';
+import { User, UserRole } from '../types.ts';
+import { DataContext } from './DataContext.tsx';
 
 interface AuthContextType {
   user: User | null;
