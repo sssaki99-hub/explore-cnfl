@@ -1,13 +1,13 @@
 
 import React, { useContext } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import AuthPage from './pages/AuthPage';
-import AdminDashboard from './pages/AdminDashboard';
-import ParticipantDashboard from './pages/ParticipantDashboard';
-import Layout from './components/Layout';
-import { AuthContext } from './contexts/AuthContext';
-import { UserRole } from './types';
+import HomePage from './pages/HomePage.tsx';
+import AuthPage from './pages/AuthPage.tsx';
+import AdminDashboard from './pages/AdminDashboard.tsx';
+import ParticipantDashboard from './pages/ParticipantDashboard.tsx';
+import Layout from './components/Layout.tsx';
+import { AuthContext } from './context/AuthContext.tsx';
+import { UserRole } from './types.ts';
 
 const App: React.FC = () => {
   const authContext = useContext(AuthContext);
