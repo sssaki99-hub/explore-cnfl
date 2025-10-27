@@ -1,11 +1,11 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { useAuth } from '../hooks/useAuth';
-import { useData } from '../hooks/useData';
-import { Event, Player, PlayerCategory, PlayerType, ParticipantTeam, ParticipantTeamPlayer, ReplacementRequest, UserRole } from '../types';
+import { useAuth } from '../hooks/useAuth.ts';
+import { useData } from '../hooks/useData.ts';
+import { Event, Player, PlayerCategory, PlayerType, ParticipantTeam, ParticipantTeamPlayer, ReplacementRequest, UserRole } from '../types.ts';
 import { 
     CreateTeamIcon, ViewTeamIcon, ReplacementIcon, MessageIcon, 
     AnnouncementIcon, HistoryIcon, HomeIcon, LeaderboardIcon, ChevronDownIcon
-} from '../components/icons';
+} from '../components/icons.tsx';
 
 type ParticipantView = 'dashboard' | 'createTeam' | 'viewMyXI' | 'replacePlayer' | 'chatBox' | 'notifications' | 'replacementHistory' | 'viewAllTeams';
 type EventStatus = 'UPCOMING' | 'RUNNING' | 'FINISHED' | 'NO_EVENT';
