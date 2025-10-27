@@ -3,7 +3,7 @@ import {
     Event, CricketTeam, Player, ParticipantTeam, ReplacementRequest, 
     Announcement, ChatMessage, User, SiteSettings, CnflHistory
 } from '../types.ts';
-import { MOCK_DATA } from './mockData.ts';
+import { MOCK_DATA } from '/mockData.ts';
 
 interface AppState {
   users: User[];
