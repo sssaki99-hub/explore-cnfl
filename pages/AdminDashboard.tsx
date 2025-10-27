@@ -1,13 +1,13 @@
 import React, { useState, useCallback, useRef, useMemo, useEffect } from 'react';
 import { toPng } from 'html-to-image';
-import { useData } from '../hooks/useData';
-import { useAuth } from '../hooks/useAuth';
-import { Event, CricketTeam, Player, PlayerCategory, PlayerType, User, UserRole, ParticipantTeam, ReplacementRequest, SiteSettings, Announcement, CnflHistory } from '../types';
+import { useData } from '../hooks/useData.ts';
+import { useAuth } from '../hooks/useAuth.ts';
+import { Event, CricketTeam, Player, PlayerCategory, PlayerType, User, UserRole, ParticipantTeam, ReplacementRequest, SiteSettings, Announcement, CnflHistory } from '../types.ts';
 import {
   EventIcon, TeamIcon, PlayerIcon, PointsIcon, ParticipantIcon, ReplacementIcon,
   LeaderboardIcon, AnnouncementIcon, MessageIcon, AdminIcon, DownloadIcon,
   EditIcon, DeleteIcon, HomeIcon, ChevronDownIcon, HistoryIcon
-} from '../components/icons';
+} from '../components/iconstsx';
 
 type AdminView = 'dashboard' | 'createEvent' | 'manageEvents' | 'teamManagement' | 'playerManagement' | 'playerPointsUpdate' | 'participantDetails' | 'replacementRequests' | 'leaderboard' | 'announcements' | 'messageBox' | 'adminManagement' | 'siteSettings' | 'cnflHistoryManagement';
 
