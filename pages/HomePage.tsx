@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useData } from '../hooks/useData';
-import { EventIcon, AnnouncementIcon, HistoryIcon } from '../components/icons';
+import { useData } from '../hooks/useData.ts';
+import { EventIcon, AnnouncementIcon, HistoryIcon } from '../components/icons.tsx';
 
 const HomePage: React.FC = () => {
   const { state } = useData();
